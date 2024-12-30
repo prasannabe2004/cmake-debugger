@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.5.0)
-project(cmake-test VERSION 0.1.0 LANGUAGES C CXX)
+cmake_minimum_required(VERSION 3.22)
 
-add_executable(cmake-test main.cpp)
+project(CppProjectTemplate VERSION 1.0.0 LANGUAGES C CXX)
 
-include(CTest)
-enable_testing()
+set(EXECUTABLE_NAME Executable)
+set(LIBRARY_NAME Library)
 
+add_subdirectory(src)
+add_subdirectory(app)
